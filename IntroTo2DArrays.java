@@ -77,16 +77,16 @@ public class IntroTo2DArrays{
     System.out.println("\n\n\nHomeWork assignment");
     //Add up the all of the values of the array using for each loops
     int hwSum = 0;
+    int hwSum2 = 0;
     for(int x: ray[0])
     {
-      hwSum = 0;
+        hwSum += x;
       for(int y: ray[1])
       {
-        if(y < ray.length)
-          hwSum += ray[x][y];
+          hwSum2 += y;
       }
-      System.out.println("The sum of row " + x + " is: " + hwSum);
     }
-    
+    hwSum = (hwSum2 / 3) + hwSum;
+    System.out.println("The sum of the array is: " + hwSum);
 }
 }
